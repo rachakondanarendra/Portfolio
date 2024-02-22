@@ -1,0 +1,297 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ddd; /* Grey */
+    color: #333;
+    margin: 0; /* Remove default margin */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar__list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar__list li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navbar__list li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.main {
+    display: grid;
+    grid-template-rows: repeat(5, auto); /* Each section takes up auto height */
+}
+
+.content {
+    text-align: center;
+    overflow: hidden; /* Clear float */
+    height: 100vh; /* Set height to full viewport height */
+}
+
+.content:nth-child(even) {
+    background-color: #ffffff; /* White background color for even sections */
+}
+
+.content:nth-child(odd) {
+    background-color: #7d7c7c; /* Silver background color for odd sections */
+}
+
+.content__title {
+    font-size: 2rem; /* Increased font size */
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif; /* Different font */
+}
+
+.content__text {
+    font-size: 1.2rem; /* Increased font size */
+    font-family: 'Open Sans', sans-serif; /* Different font */
+}
+
+.box {
+    background-color: #87ceeb; /* Sky blue background color */
+    border-radius: 20px; /* More radius for highlighting */
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+.box ul {
+    list-style: none;
+}
+
+.project h3 {
+    color: #3498db; /* Blue */
+    margin-bottom: 10px;
+    font-size: 1.8rem; /* Increased font size */
+    font-family: 'Montserrat', sans-serif; /* Different font */
+}
+
+.project-details {
+    padding-left: 20px; /* Add left padding for text */
+    padding-right: 20px; /* Add right padding for text */
+}
+
+.project p {
+    margin-bottom: 10px;
+    font-size: 1.2rem; /* Increased font size */
+    font-family: 'Open Sans', sans-serif; /* Different font */
+    text-align: left; /* Align text to the left */
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Additional styles */
+.intro-box {
+    padding: 40px; /* Add padding for space around the content */
+    border-radius: 10px; /* Rounded corners for introduction box */
+}
+
+.pink-text {
+    color: #ff69b4; /* Pink text color */
+}
+
+.skyblue-background {
+    background-color: #87ceeb; /* Sky blue background color */
+}
+
+/* Add this to your existing CSS */
+.intro-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+}
+
+.intro-box  {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-family: Georgia, serif; /* Georgia font */
+    color: white; /* White color for the text */
+}
+
+
+
+
+.intro-box .red-text {
+    color: red; /* Red color */
+}
+
+.intro-box .pink-text {
+    color: #ff69b4; /* Pink color */
+}
+.intro-box .white-text {
+    color: white; /* White color */
+}
+
+
+#typewriter {
+    display: inline-block; /* Ensure each letter appears individually */
+    color: #fe007f; /* Pink color */
+    animation: slideRight 5s linear infinite; /* Apply animation */
+}
+
+
+.personal-info__box {
+    background-color: silver; /* Silver color */
+    border-radius: 15px; /* Increase border radius */
+    padding: 30px; /* Increase padding */
+    max-width: 800px; /* Increase maximum width */
+    margin: 0 auto; /* Center horizontally */
+    height: calc(100vh - 100px); /* Calculate height relative to viewport height */
+    display: flex; /* Use flexbox for vertical alignment */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+}
+
+.personal-info__list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.personal-info__list li {
+    margin-bottom: 15px; /* Increase margin bottom */
+    font-size: 2.0rem; /* Increase font size */
+    font-family: 'Open Sans', sans-serif; /* Different font */
+    color: rgb(0, 0, 0); /* White color */
+}
+
+
+.education__box {
+    background-color: silver; /* Silver color */
+    border-radius: 15px; /* Increase border radius */
+    padding: 30px; /* Increase padding */
+    max-width: 800px; /* Increase maximum width */
+    margin: 0 auto; /* Center horizontally */
+    height: calc(100vh - 100px); /* Calculate height relative to viewport height */
+    display: flex; /* Use flexbox for vertical alignment */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+}
+
+.education__list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.education__list li {
+    margin-bottom: 15px; /* Increase margin bottom */
+    font-size: 1.5rem; /* Increase font size */
+    font-family: 'Open Sans', sans-serif; /* Different font */
+    color: white; /* White color */
+}
+
+
+#technical-skills {
+    height: calc(60vh - 50px); /* Decrease height of the technical skills section */
+}
+
+.technical-skills__box {
+    background-color: silver; /* Silver color */
+    border-radius: 15px; /* Increase border radius */
+    padding: 20px; /* Decrease padding */
+    max-width: 1300px; /* Increase maximum width */
+    margin: 0 auto 20px; /* Center horizontally and set bottom margin */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    height: calc(50vh - 100px); /* Decrease height of the rectangle box */
+}
+
+.technical-skills__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Center images and captions */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.technical-skills__list li {
+    display: inline-block; /* Display list items horizontally */
+    vertical-align: middle; /* Align items vertically */
+    margin-right: 20px; /* Add spacing between items */
+}
+
+.technical-skills__list li:last-child {
+    margin-right: 0; /* Remove margin from last item */
+}
+
+.technical-skills__list li img {
+    width: 180px; /* Set fixed width for images */
+    height: 180px; /* Set fixed height for images */
+    display: block; /* Ensure images take full width of parent */
+    margin-bottom: 10px; /* Add spacing between image and caption */
+}
+
+.technical-skills__list li span {
+    display: block; /* Display captions as block elements */
+}
+
+.education__box {
+    background-color: silver; /* Silver color for the rectangle box */
+    border-radius: 15px; /* Border radius for visual appeal */
+    padding: 20px; /* Padding */
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto 20px; /* Center horizontally and add bottom margin */
+}
+
+.education__type {
+    background-color: white; /* White color for education type boxes */
+    border-radius: 10px; /* Border radius for visual appeal */
+    padding: 10px; /* Padding */
+    margin-bottom: 20px; /* Add bottom margin between education types */
+}
+
+.education__type h3 {
+    margin-top: 0; /* Remove top margin for education type headings */
+    color: pink; /* Pink color for education type headings */
+}
+
+.education__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.education__item {
+    margin-bottom: 10px; /* Add bottom margin between education items */
+}
+
+.education__item strong {
+    font-weight: bold; /* Bold font weight */
+    color: pink; /* Pink color for labels */
+    font-size: 20px;
+}
+
+.education__item span {
+    display: block; /* Display each piece of information as a block element */
+    color: black; /* Black color for information */
+    font-size: 15px;
+}
